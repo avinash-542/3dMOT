@@ -132,7 +132,7 @@ cd ../../
 ## Data Preparation
 * Please download the official [nuScenes full dataset (v1.0)](https://www.nuscenes.org/download), then uncompress, and put the data under "./data/nuScenes/data" folder in the following structure:
 
-```bash 
+```
 3DMOT
 ├── data
 │   ├── nuScenes
@@ -157,7 +157,7 @@ python scripts/nuScenes/export_kitti.py nuscenes_gt2kitti_trk --split test
 
 The above code will generate nuScenes GT data at "./data/nuScenes/nuKITTI/tracking" following the KITTI format. Please check if the data has the following structure:
 
-```bash
+```
 3DMOT/data
 ├── nuScenes
 │   ├── nuKITTI
