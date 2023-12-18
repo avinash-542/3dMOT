@@ -65,7 +65,7 @@ class KittiConverter:
                  result_root: str = './results/nuScenes/',
                  result_name: str = 'megvii_val_H1',         
                  cam_name: str = 'CAM_FRONT',
-                 lidar_name: str = 'LIDAR_TOP',            
+                 lidar_name: str = 'RADAR_FRONT',            
                  split: str = 'val'):
         """
         :param nusc_kitti_root: Where to write the KITTI-style annotations.
@@ -557,8 +557,8 @@ class KittiConverter:
         if meta is None:
             meta = {
                 'use_camera': False,
-                'use_lidar': True,
-                'use_radar': False,
+                'use_lidar': False,
+                'use_radar': True,
                 'use_map': False,
                 'use_external': False,
             }
@@ -625,8 +625,8 @@ class KittiConverter:
         # Dummy meta data, please adjust accordingly.
         meta = {
             'use_camera': False,
-            'use_lidar': True,
-            'use_radar': False,
+            'use_lidar': False,
+            'use_radar': True,
             'use_map': False,
             'use_external': False,
             }
